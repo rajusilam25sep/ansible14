@@ -10,6 +10,6 @@
 
   - name: i want to install java on centos
     dnf: 
-     name: "{{myjavaoncentos}}"
+     name: "{{myjavaonRedHat}}"
      state: present
     when: ansible_os_family== "RedHat"
