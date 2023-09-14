@@ -3,12 +3,12 @@
   become: yes
   gather_facts: yes
   tasks:
-  - name: in this tasks , i want install apache2 webservers
+  - name: in this tasks , i want install apache2 webservers on ubuntu
     apt:
      name: apache2
      state: present
     when: ansible_os_family== "Debian"
-  - name: in this tasks, i want to start webservers
+  - name: in this tasks, i want to start webservers on ubuntu
     service:
       name: apache2
       state: started
