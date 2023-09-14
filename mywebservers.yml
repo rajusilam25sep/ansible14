@@ -13,3 +13,13 @@
       name: apache2
       state: started
     when: ansible_os_family== "Debian"
+  - name: in this tasks, i want install httpd webservers on centos
+    dnf:
+     name: httpd
+     state: present
+    when: ansible_os_family== "centos"
+  - name: in this tasks, i want to webservers on centos
+    service:
+     name: httpd
+     state: started
+    when: ansible_os_family== "centos"
