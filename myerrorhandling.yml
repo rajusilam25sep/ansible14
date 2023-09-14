@@ -4,16 +4,16 @@
   tasks:
   - name: install git
     apt:
-     name: git 
-     state: present
+      name: git 
+      state: present
 
   - name: install tree
     apt: 
-     name: tree
-     statee: present
+      name: tree
+      statee: present
     ignore_error: true
 
   - name: install wget
     apt:
-     name: wget
-     state: present
+      name: wget
+      state: present
